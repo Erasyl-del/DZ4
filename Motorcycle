@@ -1,0 +1,21 @@
+public class Motorcycle : IVehicle
+{
+    public string Type { get; }
+    public int EngineVolume { get; }
+
+    public Motorcycle(string type, int engineVolume)
+    {
+        Type = type;
+        EngineVolume = engineVolume;
+    }
+
+    public void Drive()
+    {
+        Console.WriteLine($"Мотоцикл типа {Type} едет.");
+    }
+
+    public void Refuel()
+    {
+        Console.WriteLine($"Мотоцикл с объемом двигателя {EngineVolume} заправляется.");
+    }
+}
