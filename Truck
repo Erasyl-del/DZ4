@@ -1,0 +1,21 @@
+public class Truck : IVehicle
+{
+    public double Capacity { get; }
+    public int Axles { get; }
+
+    public Truck(double capacity, int axles)
+    {
+        Capacity = capacity;
+        Axles = axles;
+    }
+
+    public void Drive()
+    {
+        Console.WriteLine($"Грузовик грузоподъемностью {Capacity} т едет.");
+    }
+
+    public void Refuel()
+    {
+        Console.WriteLine($"Грузовик с {Axles} осями заправляется.");
+    }
+}
