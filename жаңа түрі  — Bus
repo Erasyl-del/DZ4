@@ -1,0 +1,21 @@
+public class Bus : IVehicle
+{
+    public int PassengerCapacity { get; }
+    public string FuelType { get; }
+
+    public Bus(int passengerCapacity, string fuelType)
+    {
+        PassengerCapacity = passengerCapacity;
+        FuelType = fuelType;
+    }
+
+    public void Drive()
+    {
+        Console.WriteLine($"Автобус на {PassengerCapacity} пассажиров едет.");
+    }
+
+    public void Refuel()
+    {
+        Console.WriteLine($"Автобус заправляется топливом: {FuelType}");
+    }
+}
