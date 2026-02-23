@@ -1,0 +1,16 @@
+public class BusFactory : VehicleFactory
+{
+    private readonly int _passengers;
+    private readonly string _fuelType;
+
+    public BusFactory(int passengers, string fuelType)
+    {
+        _passengers = passengers;
+        _fuelType = fuelType;
+    }
+
+    public override IVehicle CreateVehicle()
+    {
+        return new Bus(_passengers, _fuelType);
+    }
+}
